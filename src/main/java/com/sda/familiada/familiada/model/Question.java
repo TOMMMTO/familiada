@@ -12,6 +12,7 @@ public class Question {
     @Id
     @GeneratedValue(generator = "questSeq")
     @SequenceGenerator(name = "questSeq", sequenceName = "quest_seq")
+    @SequenceGenerator(name = "questSeq", sequenceName = "quest_seq", allocationSize = 1)
     private Long id;
     private String question;
     private String answer1;
