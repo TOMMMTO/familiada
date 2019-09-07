@@ -1,0 +1,12 @@
+insert INTO QUESTION (id, question, answer1, points1, answer2, points2, answer3, points3, answer4, points4) values (nextval('quest_seq'), 'Wiecej niz jedno zwierze to: ', 'owca', 40, 'lama', 30, 'stado', 15, 'wataha', 8);
+insert INTO QUESTION (id, question, answer1, points1, answer2, points2, answer3, points3, answer4, points4) values (nextval('quest_seq'), 'Jaki przedmiot szkolny najmniej przydaje sie w zyciu?: ', 'kanapka', 36, 'linijka', 30, 'historia', 10, 'religia', 1);
+insert INTO QUESTION (id, question, answer1, points1, answer2, points2, answer3, points3, answer4, points4) values (nextval('quest_seq'), 'Co wiekszosc ludzi robi raz w tygodniu?: ', 'chodzi do kosciola', 35, 'pranie', 26, 'zakupy', 15, 'porzadki', 10);
+insert INTO QUESTION (id, question, answer1, points1, answer2, points2, answer3, points3, answer4, points4) values (nextval('quest_seq'), 'Co mozna kupic za mniej niz zlotowke?: ', 'gume kulke', 44, 'bulke', 37, 'zapalki', 15, 'znaczek pocztowy', 5);
+insert INTO QUESTION (id, question, answer1, points1, answer2, points2, answer3, points3, answer4, points4) values (nextval('quest_seq'), 'Nazwij plyn w kuchni, ktorego lepiej nie pic: ', 'plyn do naczyn', 46, 'ocet', 30, 'olej', 16, 'pomyje', 6);
+insert INTO QUESTION (id, question, answer1, points1, answer2, points2, answer3, points3, answer4, points4) values (nextval('quest_seq'), 'Nazwij znanych czarodziejow: ', 'Gandalf', 50, 'Harry Potter', 41, 'Merlin', 27, 'Wrozka Chrzestna', 10);
+insert INTO QUESTION (id, question, answer1, points1, answer2, points2, answer3, points3, answer4, points4) values (nextval('quest_seq'), 'Jakie meble moga byc robione recznie?: ', 'stol', 41, 'krzeslo', 31, 'szafa', 15, 'lozko', 5);
+insert INTO QUESTION (id, question, answer1, points1, answer2, points2, answer3, points3, answer4, points4) values (nextval('quest_seq'), 'Nazwij postaci z Avengersow: ', 'Ironman', 45, 'Thor', 31, 'Capitan America', 28, 'Black Widow', 15);
+insert INTO QUESTION (id, question, answer1, points1, answer2, points2, answer3, points3, answer4, points4) values (nextval('quest_seq'), 'Ile trwa chwila?: ', 'chwile', 25, 'troche', 17, 'moment', 6, 'sekunde', 3);
+insert INTO QUESTION (id, question, answer1, points1, answer2, points2, answer3, points3, answer4, points4) values (nextval('quest_seq'), 'Podaj powod spoznienia do pracy: ', 'korki', 36, 'zaspanie', 23, 'zla pogoda', 11, 'kac', 3);
+
+commit ;
