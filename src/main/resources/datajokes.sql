@@ -12,7 +12,7 @@ insert INTO JOKES (id, joke, answer) values (nextval ('whip_seq'), 'Jak wabi si�
 insert INTO JOKES (id, joke, answer) values (nextval ('whip_seq'), 'Ulubiony baton informatyka ?', '3 bit');
 insert INTO JOKES (id, joke, answer) values (nextval ('whip_seq'), 'Co robi piłkarz na ulicy ?', 'Stoi w korkach');
 insert INTO JOKES (id, joke, answer) values (nextval ('whip_seq'), 'Jak nazywa się włączone radio ?', 'Radioaktywne');
-insert INTO JOKES (id, joke, answer) values (nextval ('whip_seq'), 'Co robi 9 zływych w protfelu ?', 'Ledwo dycha');
+insert INTO JOKES (id, joke, answer) values (nextval ('whip_seq'), 'Co robi 9 złotych w protfelu ?', 'Ledwo dycha');
 insert INTO JOKES (id, joke, answer) values (nextval ('whip_seq'), 'Jak Staś żegna Nel ?', 'Panel');
 insert INTO JOKES (id, joke, answer) values (nextval ('whip_seq'), 'Ulubiony owoc prokuratora ?', 'Winny');
 insert INTO JOKES (id, joke, answer) values (nextval ('whip_seq'), 'Jak nazywa się rozmowa wędkarzy ?', 'Pogawędka');
