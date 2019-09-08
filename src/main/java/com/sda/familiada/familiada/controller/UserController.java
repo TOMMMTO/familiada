@@ -10,6 +10,20 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class UserController {
 
+    @GetMapping("/login")
+    public ModelAndView getLoginPage() {
+        return new ModelAndView("login");
+    }
+
+    @GetMapping("/admin")
+    public ModelAndView getAdminPage() {
+        return new ModelAndView("admin");
+    }
+
+    @GetMapping("/adminPanel")
+    public ModelAndView getAdminPanelPage() {
+        return new ModelAndView("adminPanel");
+    }
 
     @PostMapping("/user")
     public String addUser(@ModelAttribute User user) {
@@ -18,10 +32,10 @@ public class UserController {
 
     @GetMapping("/user/add")
     public ModelAndView createUserView() {
-    ModelAndView modelAndView = new ModelAndView("addUser");
+        ModelAndView modelAndView = new ModelAndView("addUser");
         modelAndView.addObject("addUser", new User());
-            return modelAndView;
-        }
-
+        return modelAndView;
     }
+
+}
 
