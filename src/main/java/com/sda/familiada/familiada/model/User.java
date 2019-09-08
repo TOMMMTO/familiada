@@ -1,19 +1,32 @@
 package com.sda.familiada.familiada.model;
 
-import javax.persistence.Embeddable;
+import javax.persistence.*;
 
-@Embeddable
+@Entity
 public class User {
-
+    @Id
+    @GeneratedValue(generator = "userIdSeq")
+    @SequenceGenerator(name = "userIdSeq", sequenceName = "userId_seq", allocationSize = 1)
+    long userId;
     public String username;
     public int score;
 
-    public User() {}
+    public User() {
+    }
 
-    public User(String username, int score) {
+    public User(long userId, String username, int score) {
+        this.userId = userId;
         this.username = username;
         this.score = score;
 
+    }
+
+    public long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 
     public String getUsername() {
