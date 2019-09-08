@@ -6,8 +6,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.List;
 
 @Controller
 public class UserController {
@@ -20,6 +21,7 @@ public class UserController {
 
     @PostMapping("/user")
     public String addUser(@ModelAttribute User user) {
+        userService.addUser(user);
         return "redirect:/users";
     }
 
@@ -31,10 +33,12 @@ public class UserController {
     }
 
     @GetMapping("/users")
-    public ModelAndView usersList(@RequestParam(required = false) String username) {
-        ModelAndView modelAndView = new ModelAndView("/users");
-        modelAndView.addObject("users", userService.findAllUsers());
+    public ModelAndView showAllUsers() {
+        List<User> users = userService.getUserList();
+        ModelAndView modelAndView = new ModelAndView("user");
+        modelAndView.addObject("Users", users);
         return modelAndView;
+
     }
-    }
+}
 

@@ -4,7 +4,7 @@ import com.sda.familiada.familiada.model.User;
 import com.sda.familiada.familiada.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
 
 @Service
 public class UserService {
@@ -15,13 +15,13 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public Set<String> findAllUsers() {
-        return userRepository.findAllUsers();
-    }
-
     public void addUser(User user) {
         userRepository.save(user);
     }
 
+    public List<User> getUserList() {
+        List<User> showAllUsers = userRepository.findAll();
+        return showAllUsers;
+    }
 }
 
