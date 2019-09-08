@@ -5,12 +5,10 @@
 <html>
 <body>
 
-<form name='loginForm'
-      action="<c:url value='/login'/>" method='POST'>
+<form name="loginForm" action="/login" method="POST">
 
     <h2>Podaj imię: </h2>
-    <td><input class=type='text' name='username'></td>
-    <a href="/users">Dołącz do gry!</a>
+    <td><input type="text" name="username"></td>
     <a href="/admin">Panel administracyjny</a>
 
 </form>
