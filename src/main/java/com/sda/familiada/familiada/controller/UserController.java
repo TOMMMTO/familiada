@@ -19,6 +19,21 @@ public class UserController {
         this.userService = userService;
     }
 
+    @GetMapping("/login")
+    public ModelAndView getLoginPage() {
+        return new ModelAndView("login");
+    }
+
+    @GetMapping("/admin")
+    public ModelAndView getAdminPage() {
+        return new ModelAndView("admin");
+    }
+
+    @GetMapping("/adminPanel")
+    public ModelAndView getAdminPanelPage() {
+        return new ModelAndView("adminPanel");
+    }
+
     @PostMapping("/user")
     public String addUser(@ModelAttribute User user) {
         userService.addUser(user);
@@ -36,9 +51,9 @@ public class UserController {
     public ModelAndView showAllUsers() {
         List<User> users = userService.getUserList();
         ModelAndView modelAndView = new ModelAndView("user");
-        modelAndView.addObject("users", users);
+        modelAndView.addObject("Users", users);
         return modelAndView;
-
     }
+
 }
 
