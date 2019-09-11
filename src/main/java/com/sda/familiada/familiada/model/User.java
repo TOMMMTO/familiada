@@ -7,7 +7,7 @@ public class User {
     @Id
     @GeneratedValue(generator = "userIdSeq")
     @SequenceGenerator(name = "userIdSeq", sequenceName = "userId_seq", allocationSize = 1)
-    long userId;
+    private long userId;
     public String username;
     public int score;
 
