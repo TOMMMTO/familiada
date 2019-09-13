@@ -7,8 +7,6 @@ import org.apache.commons.math3.random.RandomDataGenerator;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
-import java.util.Random;
 
 @Service
 public class QuestionService {
