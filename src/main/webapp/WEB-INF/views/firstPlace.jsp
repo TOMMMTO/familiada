@@ -6,6 +6,7 @@
 <html>
 <body>
 
+
 <form method="POST" action="/firstPlace" modelAttribute="firstPlace">
     <section id="firstPlace">
          <script language="JavaScript">

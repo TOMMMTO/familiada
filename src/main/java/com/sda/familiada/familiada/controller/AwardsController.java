@@ -8,6 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class AwardsController {
 
+
    private final AwardsService awardsService;
 
    public AwardsController(AwardsService awardsService) {

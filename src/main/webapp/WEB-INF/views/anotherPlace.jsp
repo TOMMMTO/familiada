@@ -8,6 +8,7 @@
 
 <form method="POST" action="/anotherPlace" modelAttribute="anotherPlace">
 
+
     <section id="anotherPlace">
         <b>
             <font size="8">

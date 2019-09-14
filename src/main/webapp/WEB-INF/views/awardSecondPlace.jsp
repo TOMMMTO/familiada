@@ -6,6 +6,7 @@
 <html>
 <body>
 
+
 <form method="POST" action="/awardSecondPlace" modelAttribute="awardSecondPlace">
     <section id="awardSecondPlace">
         <b>
