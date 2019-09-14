@@ -6,8 +6,8 @@
 <html>
 <body>
 
-<form method="POST" action="/secondplace" modelAttribute="secondplace">
-    <section id="awards_secondplace">
+<form method="POST" action="/secondPlace" modelAttribute="secondPlace">
+    <section id="secondPlace">
         <script language="JavaScript">
 
             function image() {

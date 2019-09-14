@@ -6,11 +6,11 @@
 <html>
 <body>
 
-<form method="POST" action="/award_thirdplace" modelAttribute="award_thirdplace">
-    <section id="award">
+<form method="POST" action="/awardFirstPlace" modelAttribute="awardFirstPlace">
+    <section id="awardFirstPlace">
         <b>
             <font size="10">
-                Gratulujemy zajęcia trzeciego miejsca!
+                Gratulujemy zajęcia pierwszego miejsca!
             </font>
         </b>
         <br/>
@@ -20,7 +20,7 @@
             </font>
         </b>
         <br/>
-        <a href="/thirdplace">
+        <a href="/firstPlace">
             <img src="https://i.wpimg.pl/730x0/m.gadzetomania.pl/prezent-4578418bbc81d59145a1eb5a.jpg" width="300" height="360" />
         </a>
 

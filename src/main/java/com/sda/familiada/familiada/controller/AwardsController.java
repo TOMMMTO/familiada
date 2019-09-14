@@ -14,37 +14,37 @@ public class AwardsController {
         this.awardsService = awardsService;
     }
 
-    @GetMapping("/award_firstplace")
+    @GetMapping("/awardFirstPlace")
     public ModelAndView showAwardFirstPlace() {
-        return new ModelAndView ("award_firstplace");
+        return new ModelAndView ("awardFirstPlace");
     }
-    @GetMapping("/firstplace")
+    @GetMapping("/firstPlace")
     public ModelAndView showFirstPlaceAwards() {
-        return new ModelAndView ("firstplace");
+        return new ModelAndView ("firstPlace");
     }
-    @GetMapping("/award_secondplace")
+    @GetMapping("/awardSecondPlace")
     public ModelAndView showAwardSecondPlace() {
-        return new ModelAndView ("award_secondplace");
+        return new ModelAndView ("awardSecondPlace");
     }
-    @GetMapping("/secondplace")
+    @GetMapping("/secondPlace")
     public ModelAndView showSecondPlaceAwards() {
-        return new ModelAndView ("secondplace");
+        return new ModelAndView ("secondPlace");
     }
-    @GetMapping("/award_thirdplace")
+    @GetMapping("/awardThirdPlace")
     public ModelAndView showAwardThirdPlace() {
-        return new ModelAndView ("award_thirdplace");
+        return new ModelAndView ("awardThirdPlace");
     }
-    @GetMapping("/thirdplace")
+    @GetMapping("/thirdPlace")
     public ModelAndView showThirdPlaceAwards() {
-        return new ModelAndView ("thirdplace");
+        return new ModelAndView ("thirdPlace");
     }
-    @GetMapping("/award_anotherplace")
+    @GetMapping("/awardAnotherPlace")
     public ModelAndView showAwardAnotherPlace() {
-        return new ModelAndView ("award_anotherplace");
+        return new ModelAndView ("awardAnotherPlace");
     }
-    @GetMapping("/anotherplace")
+    @GetMapping("/anotherPlace")
     public ModelAndView showAnotherPlaceAwards() {
-        return new ModelAndView ("anotherplace");
+        return new ModelAndView ("anotherPlace");
     }
 
 

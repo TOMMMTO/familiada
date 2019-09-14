@@ -6,9 +6,9 @@
 <html>
 <body>
 
-<form method="POST" action="/secondplace" modelAttribute="secondplace">
+<form method="POST" action="/anotherPlace" modelAttribute="anotherPlace">
 
-    <section id="awards_anotherplace">
+    <section id="anotherPlace">
         <b>
             <font size="8">
                 Nie ma nic cenniejszego niż uśmiech Karola!
@@ -16,7 +16,7 @@
         </b>
         <br/>
         <a>
-            <img src='https://s3.party.pl/tvshow/karol-strasburger-w-teleturnieju-familiada-w-szarym-garniturze-297732-MT.jpg' width="800" height="700">
+            <img src="https://s3.party.pl/tvshow/karol-strasburger-w-teleturnieju-familiada-w-szarym-garniturze-297732-MT.jpg" width="800" height="700">
         </a>
     </section>
 </form>
