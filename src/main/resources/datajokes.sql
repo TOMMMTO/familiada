@@ -19,4 +19,4 @@ insert INTO JOKES (id, joke, answer) values (nextval ('jokes_seq'), 'Jak nazywa 
 insert INTO JOKES (id, joke, answer) values (nextval ('jokes_seq'), 'Co mówi podłoga po remoncie ?', 'Jestem wykończona');
 insert INTO JOKES (id, joke, answer) values (nextval ('jokes_seq'), 'Co mówi wkurzony ogrodnik do kumpla ?', 'Przesadziłeś');
 
-commit ;
+commit;
