@@ -15,7 +15,7 @@ public class JokeService {
     public JokeService(JokeRepository jokeRepository) {
         this.jokeRepository = jokeRepository;
     }
-    public List<Jokes> getJokeList() {
+    public List<Jokes> findAll() {
         List<Jokes> showAllJokes = jokeRepository.findAll();
         return showAllJokes;
     }

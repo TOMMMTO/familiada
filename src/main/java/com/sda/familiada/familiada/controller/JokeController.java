@@ -20,7 +20,7 @@ public class JokeController {
 
     @GetMapping("/jokes")
     public ModelAndView showAllJokes() {
-        List<Jokes> jokes = jokeService.getJokeList();
+        List<Jokes> jokes = jokeService.findAll();
         ModelAndView modelAndView = new ModelAndView("joke");
         modelAndView.addObject("jokes", jokes);
         return modelAndView;
