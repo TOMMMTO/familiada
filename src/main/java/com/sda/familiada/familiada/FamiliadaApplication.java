@@ -8,6 +8,7 @@ public class FamiliadaApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(FamiliadaApplication.class, args);
+
     }
 
 }
