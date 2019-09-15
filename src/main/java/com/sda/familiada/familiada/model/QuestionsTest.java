@@ -9,11 +9,8 @@ import java.util.Objects;
 @Entity
 public class QuestionsTest {
 
-    @Id
-    @GeneratedValue(generator = "questSeq")
-    @SequenceGenerator(name = "questSeq", sequenceName = "quest_seq")
-    @SequenceGenerator(name = "questSeq", sequenceName = "quest_seq", allocationSize = 1)
-    private Long id;
+
+    private Long id_question;
     private String question;
 
     public QuestionsTest() {
@@ -23,12 +20,12 @@ public class QuestionsTest {
         this.question = question;
     }
 
-    public Long getId() {
-        return id;
+    public Long getId_question() {
+        return id_question;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setId_question(Long id_question) {
+        this.id_question = id_question;
     }
 
     public String getQuestion() {
@@ -44,11 +41,11 @@ public class QuestionsTest {
         if (this == o) return true;
         if (!(o instanceof QuestionsTest)) return false;
         QuestionsTest that = (QuestionsTest) o;
-        return Objects.equals(getId(), that.getId());
+        return Objects.equals(getId_question(), that.getId_question());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId());
+        return Objects.hash(getId_question());
     }
 }

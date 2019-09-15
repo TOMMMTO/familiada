@@ -1,4 +1,4 @@
-insert into QUESTIONTEST (id, question) values (nextval('quest_seq'), 'WIECEJ NIZ JEDNO ZWIERZE TO: ');
-insert into QUESTIONTEST (id, question) values (nextval('quest_seq'), 'JAKI PRZEDMIOT SZKOLNY NAJMNIEJ PRZYDAJE SIE W ZYCIU?: ');
+insert into QUESTIONTEST (id_question, question) values (1, 'WIECEJ NIZ JEDNO ZWIERZE TO: ');
+insert into QUESTIONTEST (id_question, question) values (2,'JAKI PRZEDMIOT SZKOLNY NAJMNIEJ PRZYDAJE SIE W ZYCIU?: ');
 
 commit;
