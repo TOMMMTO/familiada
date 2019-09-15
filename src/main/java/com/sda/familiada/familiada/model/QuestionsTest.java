@@ -1,6 +1,9 @@
 package com.sda.familiada.familiada.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import java.util.Objects;
 
 @Entity
