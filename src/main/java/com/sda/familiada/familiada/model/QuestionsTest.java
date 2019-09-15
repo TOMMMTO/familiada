@@ -10,6 +10,7 @@ import java.util.Objects;
 public class QuestionsTest {
 
 
+    @Id
     private Long id_question;
     private String question;
 
