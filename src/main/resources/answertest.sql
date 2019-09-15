@@ -1,2 +1,10 @@
-insert INTO QUESTION (id, answer1, points1, answer2, points2, answer3, points3, answer4, points4) values (nextval('quest_seq'), 'OWCA', 40, 'LAMA', 30, 'STADO', 15, 'WATAHA', 8);
-insert INTO QUESTION (id, answer1, points1, answer2, points2, answer3, points3, answer4, points4) values (nextval('quest_seq'), 'KANAPKA', 36, 'LINIJKA', 30, 'HISTORIA', 10, 'RELIGIA', 1);
+insert INTO QUESTION (id, id_question, answer, points) values (1, 1, 'quest_seq', 'OWCA', 40);
+insert INTO QUESTION (id, id_question, answer, points) values (2, 1, 'quest_seq', 'LAMA', 30);
+insert INTO QUESTION (id, id_question, answer, points) values (3, 1, 'quest_seq', 'STADO', 15);
+insert INTO QUESTION (id, id_question, answer, points) values (4, 1, 'quest_seq', 'WATAHA', 8);
+insert INTO QUESTION (id, id_question, answer, points) values (5, 2, 'quest_seq', 'KANAPKA', 36);
+insert INTO QUESTION (id, id_question, answer, points) values (6, 2, 'quest_seq', 'LINIJKA', 30);
+insert INTO QUESTION (id, id_question, answer, points) values (7, 2, 'quest_seq', 'HISTORIA', 10);
+insert INTO QUESTION (id, id_question, answer, points) values (8, 2, 'quest_seq', 'RELIGIA', 1);
+
+commit;

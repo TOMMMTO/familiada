@@ -1,38 +1,26 @@
 package com.sda.familiada.familiada.model;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import java.util.Objects;
 
+@Entity
 public class AnswersTest {
-    @Id
-    @GeneratedValue(generator = "questSeq")
-    @SequenceGenerator(name = "questSeq", sequenceName = "quest_seq")
-    @SequenceGenerator(name = "questSeq", sequenceName = "quest_seq", allocationSize = 1)
+
     private Long id;
-    private String answer1;
-    private int points1;
-    private String answer2;
-    private int points2;
-    private String answer3;
-    private int points3;
-    private String answer4;
-    private int points4;
+    private Long id_question;
+    private String answer;
+    private int points;
 
     public AnswersTest() {
     }
 
-    public AnswersTest(Long id, String answer1, int points1, String answer2, int points2, String answer3, int points3, String answer4, int points4) {
-        this.id = id;
-        this.answer1 = answer1;
-        this.points1 = points1;
-        this.answer2 = answer2;
-        this.points2 = points2;
-        this.answer3 = answer3;
-        this.points3 = points3;
-        this.answer4 = answer4;
-        this.points4 = points4;
+    public AnswersTest(Long id_question, String answer, int points) {
+        this.id_question = id_question;
+        this.answer = answer;
+        this.points = points;
     }
 
     public Long getId() {
@@ -43,68 +31,28 @@ public class AnswersTest {
         this.id = id;
     }
 
-    public String getAnswer1() {
-        return answer1;
+    public Long getId_question() {
+        return id_question;
     }
 
-    public void setAnswer1(String answer1) {
-        this.answer1 = answer1;
+    public void setId_question(Long id_question) {
+        this.id_question = id_question;
     }
 
-    public int getPoints1() {
-        return points1;
+    public String getAnswer() {
+        return answer;
     }
 
-    public void setPoints1(int points1) {
-        this.points1 = points1;
+    public void setAnswer(String answer) {
+        this.answer = answer;
     }
 
-    public String getAnswer2() {
-        return answer2;
+    public int getPoints() {
+        return points;
     }
 
-    public void setAnswer2(String answer2) {
-        this.answer2 = answer2;
-    }
-
-    public int getPoints2() {
-        return points2;
-    }
-
-    public void setPoints2(int points2) {
-        this.points2 = points2;
-    }
-
-    public String getAnswer3() {
-        return answer3;
-    }
-
-    public void setAnswer3(String answer3) {
-        this.answer3 = answer3;
-    }
-
-    public int getPoints3() {
-        return points3;
-    }
-
-    public void setPoints3(int points3) {
-        this.points3 = points3;
-    }
-
-    public String getAnswer4() {
-        return answer4;
-    }
-
-    public void setAnswer4(String answer4) {
-        this.answer4 = answer4;
-    }
-
-    public int getPoints4() {
-        return points4;
-    }
-
-    public void setPoints4(int points4) {
-        this.points4 = points4;
+    public void setPoints(int points) {
+        this.points = points;
     }
 
     @Override
@@ -112,11 +60,12 @@ public class AnswersTest {
         if (this == o) return true;
         if (!(o instanceof AnswersTest)) return false;
         AnswersTest that = (AnswersTest) o;
-        return Objects.equals(id, that.id);
+        return Objects.equals(getId(), that.getId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id);
+        return Objects.hash(getId());
     }
 }
+
