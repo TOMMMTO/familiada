@@ -9,6 +9,7 @@ import java.util.Objects;
 @Entity
 public class AnswersTest {
 
+    @Id
     private Long id;
     private Long id_question;
     private String answer;
