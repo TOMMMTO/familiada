@@ -5,11 +5,11 @@ import javax.persistence.*;
 @Entity
 public class User {
     @Id
-    @GeneratedValue(generator = "userIdSeq")
-    @SequenceGenerator(name = "userIdSeq", sequenceName = "userId_seq", allocationSize = 1)
+    @GeneratedValue(generator = "userSeq")
+    @SequenceGenerator(name = "userSeq", sequenceName = "user_seq", allocationSize = 1)
     private long userId;
-    public String username;
-    public int score;
+    private String username;
+    private int score;
 
     public User() {
     }
