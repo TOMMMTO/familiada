@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
-//TODO dodac liste odpowiedzi generowana automatycznie z pytaniem. Mozna sie do niej odwolywac podczas sprawdzania odpowiedzi.
+
 @Controller
 public class AnswerController {
 

@@ -17,6 +17,9 @@ public class Answer {
     public Answer() {
     }
 
+    public Answer(String answer) {
+        this.answer = answer;
+    }
 
     public Question getQuestion() {
         return question;
