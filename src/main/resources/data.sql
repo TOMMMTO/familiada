@@ -20,7 +20,7 @@ insert INTO QUESTION (id, question) values (nextval('quest_seq'), 'PODAJ MIEJSCE
 insert INTO QUESTION (id, question) values (nextval('quest_seq'), 'CO MOŻNA ZNALEŹĆ W OPUSZCZONYM DOMU? ');
 insert INTO QUESTION (id, question) values (nextval('quest_seq'), 'CZEGO LEPIEJ NIE ZAPOMNIEĆ WYCHODZĄC Z DOMU? ');
 insert INTO QUESTION (id, question) values (nextval('quest_seq'), 'PODAJ MIEJSCA, W KTÓRYCH NIE WOLNO NIC DOTYKAĆ ');
-insert INTO QUESTION (id, question) values (nextval('quest_seq'), 'CZEGO NAJLEPIEJ SZUKAC NA BEZLUDNEJ WYSPIE? ');
+insert INTO QUESTION (id, question) values (nextval('quest_seq'), 'CZEGO NAJLEPIEJ SZUKAĆ NA BEZLUDNEJ WYSPIE? ');
 insert INTO QUESTION (id, question) values (nextval('quest_seq'), 'PODAJ ZWIERZĘ NA LITERĘ "M" ');
 insert INTO QUESTION (id, question) values (nextval('quest_seq'), 'Z JAKIEJ OKAZJI ORGANIZUJEMY IMPREZY? ');
 insert INTO QUESTION (id, question) values (nextval('quest_seq'), 'PODAJ ZAWÓD NA LITERĘ "T" ');

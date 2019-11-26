@@ -17,6 +17,7 @@ public class Answer {
     public Answer() {
     }
 
+
     public Question getQuestion() {
         return question;
     }
