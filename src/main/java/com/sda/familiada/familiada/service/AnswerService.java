@@ -9,6 +9,7 @@ import org.apache.commons.math3.random.RandomDataGenerator;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class AnswerService {
@@ -22,13 +23,12 @@ public class AnswerService {
     }
 
     //public List<Question> getQuestionsList(){
-      //  List<Question> allQuestions = answerRepository.findAll();
-       // List<QuestionsList> questionsList = new ArrayList<>();
-        //allQuestions.forEach(question -> {
-         //  List<QuestionsList> byQuestionId = questionRepository.findAll();
-       // return allQuestions;
-   // }
-
+    //  List<Question> allQuestions = answerRepository.findAll();
+    // List<QuestionsList> questionsList = new ArrayList<>();
+    //allQuestions.forEach(question -> {
+    //  List<QuestionsList> byQuestionId = questionRepository.findAll();
+    // return allQuestions;
+    // }
 
 
     public Question getRandomQuestion() {
@@ -39,4 +39,13 @@ public class AnswerService {
     public List<Answer> getAnswersForQuestion(Long id) {
         return answerRepository.searchByQuestionId(id);
     }
+
+    public Optional<Answer> getAllAnswers(Long id) {
+        return answerRepository.findById(id);
+    }
+
+    public boolean checkAnswer(){
+        return false;
+    }
+
 }
