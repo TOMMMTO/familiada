@@ -5,12 +5,15 @@ import com.sda.familiada.familiada.model.Question;
 import com.sda.familiada.familiada.service.AnswerService;
 import com.sda.familiada.familiada.service.QuestionService;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+
+import static javafx.scene.input.KeyCode.T;
 
 
 @Controller
@@ -27,7 +30,7 @@ public class QuestionController {
     @GetMapping("/")
     public ModelAndView showQuestion() {
 
-        Question randomQuestion = questionService.getRandomId();
+        com.sda.familiada.familiada.model.Question randomQuestion = questionService.getRandomQuestion();
         String questionString = randomQuestion.getQuestion();
         long id = randomQuestion.getId();
         List<Answer> answersToRandomQuestion = answerService.getAnswersForQuestion(id);
@@ -40,6 +43,28 @@ public class QuestionController {
 
         return modelAndView;
 
+    }
+
+    @GetMapping("/firstRound")
+    public ModelAndView showFirstRound() {
+        List<com.sda.familiada.familiada.model.Question> questionList = new ArrayList<>();
+        List<com.sda.familiada.familiada.model.Question> usedQuestionList = new ArrayList<>();
+        while (questionList.size() != 5) {
+            com.sda.familiada.familiada.model.Question question = questionService.getRandomQuestion();
+            if (!usedQuestionList.contains(question)) {
+                questionList.add(question);
+                usedQuestionList.add(question);
+            } else {
+                questionService.getRandomQuestion();
+            }
+        }
+        ModelAndView modelAndView = new ModelAndView("roundOne");
+        modelAndView.addObject("question1", questionList.get(0).getQuestion());
+        modelAndView.addObject("question2", questionList.get(1).getQuestion());
+        modelAndView.addObject("question3", questionList.get(2).getQuestion());
+        modelAndView.addObject("question4", questionList.get(3).getQuestion());
+        modelAndView.addObject("question5", questionList.get(4).getQuestion());
+        return modelAndView;
     }
 
 }
